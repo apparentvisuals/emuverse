@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Rodin Bokutoh Pro';
+    src: url('/RodinBokutohProM.otf');
+}
+
+:root {
+    font-family: 'Rodin Bokutoh Pro';
+}
+
+main.light {
+	background-color: white;
+	color: #2D2D2D;
+}
+
+main.dark {
+	background-color: #2D2D2D;
+	color: white;
+}
+
+@keyframes borderColorChange {
+	0% {
+		border-color: #62EFDF;
+	}
+	50% {
+		border-color: #1b98c6;
+	}
+	100% {
+		border-color: #62EFDF;
+	}
+}
+
+.animate-borderColor {
+	animation: borderColorChange .9s infinite;
+}
